@@ -1,0 +1,15 @@
+.note {
+    background-color: #F4F4F4;
+}
+
+.note--txt {
+    padding: 14px;
+    color: #333333;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 26px;
+}
+
+.note--pad {
+    padding: 0 0 20px 0;
+}

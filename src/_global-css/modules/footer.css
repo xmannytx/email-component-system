@@ -1,0 +1,34 @@
+.footer__icon {
+    padding-right: 10px;
+}
+
+.footer__body {
+    padding: 30px 20px 20px 20px;
+}
+
+.footer__article,
+.footer__responsive-link {
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+.footer__article {
+    padding-bottom: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .footer__responsive-link {
+        display: block !important;
+        width: 100% !important;
+        padding: 15px 0;
+        border-top: 1px solid #CCCCCC;
+    }
+
+    .footer__responsive-link--first {
+        padding-top: 5px !important;
+        border-top: none !important;
+    }
+
+}

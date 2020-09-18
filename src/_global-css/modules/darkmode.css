@@ -1,0 +1,6 @@
+.show-in-dark,
+.show-in-dark-inline {
+	display: none;
+	max-height: 0;
+	overflow: hidden;
+}

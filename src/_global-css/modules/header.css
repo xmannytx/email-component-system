@@ -1,0 +1,44 @@
+/* The following two images need to be set to display block to prevent weird spacing in Gmail desktop app */
+.header__img {
+    display: block;
+    margin: 0 auto;
+}
+
+.header__webversion {
+    padding: 8px 0;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.pdf-link {
+	text-decoration: none !important;
+}
+
+.pdf-span {
+	color: #FFFFFF !important;
+	text-decoration: underline;
+}
+
+.header__responsive {
+    padding: 0 20px;
+}
+
+.header__subhead {
+    letter-spacing: 0.075em;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+        border-bottom: 1px solid #D8D8D8;
+    }
+
+    .header__responsive {
+        height: auto !important;
+    }
+
+}

@@ -1,0 +1,31 @@
+.email-body__space {
+    padding: 0 0 16px 0;
+}
+
+.email-body__ad-label {
+    padding-bottom: 7px;
+}
+
+.email-body__box,
+.email-body__img {
+    padding: 4px 0 20px 0;
+}
+
+.email-body__columns {
+    padding: 4px 0 2px 0;
+}
+
+.email-body__inline-icon {
+    width: 18px;
+    padding-right: 5px;
+    margin-bottom: -2px;
+}
+
+.email-body__small-link {
+    text-decoration: none !important;
+    white-space: nowrap;
+}
+
+.column--one-half {
+    padding-bottom: 18px;
+}

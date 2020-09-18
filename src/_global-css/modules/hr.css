@@ -1,0 +1,25 @@
+.hr {
+    padding: 36px 0 20px 0;
+}
+
+.hr .td {
+    padding: 0;
+    line-height: 0 !important;
+    border-top: 1px solid #CCCCCC;
+}
+
+.hr--first {
+    padding: 0 0 20px;
+}
+
+.hr--md {
+    padding: 8px 0 24px 0;
+}
+
+.hr--sm {
+    padding: 8px 0 8px 0;
+}
+
+.hr--none {
+    padding: 0;
+}

@@ -1,0 +1,6 @@
+.footer a,
+.footer a:link,
+.footer a:visited {
+	color: #0080C3;
+	text-decoration: none !important;
+}

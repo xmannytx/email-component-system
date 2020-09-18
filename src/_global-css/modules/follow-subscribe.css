@@ -1,0 +1,52 @@
+.follow-subscribe .hr .td {
+    border-top: 1px solid #CCCCCC;
+}
+
+.follow-subscribe .td {
+  width: 50%;
+}
+
+.follow-subscribe .td--last {
+    border-left: 1px solid #CCCCCC;
+}
+
+.follow-subscribe__icon {
+    padding: 0 0 8px 0;
+    margin: 0;
+    display: block;
+    vertical-align: middle;
+}
+
+.follow-subscribe__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .follow-subscribe__text {
+        font-size: 12px !important;
+    }
+
+    .follow-subscribe__icon {
+        display: block !important;
+        padding-bottom: 5px !important;
+    }
+
+    .follow-subscribe .td {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    .follow-subscribe .td--first {
+        padding: 0 0 20px 0 !important;
+    }
+
+    .follow-subscribe .td--last {
+        border-left: none !important;
+        border-top: 1px solid #CCCCCC;
+        padding: 25px 0 0 0 !important;
+    }
+
+}

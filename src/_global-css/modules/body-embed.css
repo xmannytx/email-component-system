@@ -1,0 +1,16 @@
+.email-body__article p,
+.email-body__box p,
+.sub-after-h1 p {
+    margin: 0 0 18px 0;
+}
+
+.email-body__article--no-pad p,
+.wp .email-body__article p:last-child {
+    margin: 0 !important;
+}
+
+.email-body__small-link,
+.email-body__small-link a {
+    text-decoration: none !important;
+    white-space: nowrap;
+}
