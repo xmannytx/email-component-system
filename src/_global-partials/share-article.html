@@ -1,0 +1,20 @@
+<tr>
+    <td class="share-article" valign="top" @@if (typeof context.align === "string") {align="@@align"}>
+        <table class="share-article__center">
+            <tr>
+                <td valign="middle">
+                    <singleline label="Text">Share article:&nbsp;</singleline>
+                </td>
+                <td class="share-article__icons" valign="middle">
+                    @@share-article__facebook-link
+                </td>
+                <td class="share-article__icons" valign="middle">
+                    @@share-article__twitter-link
+                </td>
+                <td class="share-article__icons" valign="middle">
+                    @@share-article__mail-link
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>

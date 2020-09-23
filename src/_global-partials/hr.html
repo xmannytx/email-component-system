@@ -1,0 +1,11 @@
+<tr>
+    <td class="hr@@if (typeof context.hrPadding === "string") { @@hrPadding}" valign="top">
+        <table width="@@if (context.width === undefined) {100%}@@if (!isNaN(context.width)) {@@width}">
+            <tr>
+                <td class="td" width="100%">
+                    @@if (context.width !== 0) {&nbsp;}@@if (context.singleline === true) {<span class="hide"><singleline label="Horizontal Rule"><span class="hide"></span></singleline></span>}
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>

@@ -1,0 +1,20 @@
+<tr>
+    <td class="email-body__box email-body__columns" valign="top">
+
+        <table class="responsive" width="@@if (context.leftWidth === undefined) {163}@@if (!isNaN(context.leftWidth)) {@@leftWidth}" align="left">
+            <tr>
+                <td class="td column--one-half" @@if (context.responsive === true) {align="center"} valign="top" width="@@if (context.leftWidth === undefined) {163}@@if (!isNaN(context.leftWidth)) {@@leftWidth}">
+                    @@two-col-one-third__content
+                </td>
+            </tr>
+        </table>
+        <table class="responsive" width="@@if (context.rightTableWidth === undefined) {347}@@if (!isNaN(context.rightTableWidth)) {@@rightTableWidth}" align="right">
+            <tr>
+                <td class="td" valign="top" width="@@if (context.rightTdWidth === undefined) {334}@@if (!isNaN(context.rightTdWidth)) {@@rightTdWidth}">
+                    @@two-col-two-third__content
+                </td>
+            </tr>
+        </table>
+
+    </td>
+</tr>

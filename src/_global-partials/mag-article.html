@@ -1,0 +1,41 @@
+<tr>
+    <td class="email-body__box email-body__columns mag-article" valign="top">
+
+        <table class="responsive" width="@@if (typeof context.width !== "number") {285}@@if (typeof context.width === "number") {@@width}" align="left">
+            <tr>
+                <td class="td" valign="top" width="@@if (typeof context.width !== "number") {285}@@if (typeof context.width === "number") {@@width}">
+                    @@mag-article__img
+                </td>
+            </tr>
+        </table>
+
+        <table class="responsive column--second-half" width="@@if (typeof context.width !== "number") {285}@@if (typeof context.width === "number") {@@width}" align="right">
+
+            <!-- h3 -->
+            @@include('h3.html', {
+                "h3__content": "<singleline label=\"Category\">@@mag-article__category</singleline>"
+            })
+            <!-- h1 -->
+            @@include('h2.html', {
+                "h2__content": "<multiline label=\"Headline\">@@mag-article__h2</multiline>",
+                "padding": false
+            })
+            <!-- horizontal rule -->
+            @@include('hr.html', {
+                "hrPadding": "hr--sm",
+                "width": "50"
+            })
+            <!-- paragraph -->
+            @@include('p.html', {
+                "p__content": "<multiline label=\"Paragraph\">@@mag-article__paragraph</multiline>",
+                "padding": "normal"
+            })
+            <!-- h3 -->
+            @@include('p.html', {
+                "p__content": "<singleline label=\"Link\"><a href=\"#doNothing\">@@mag-article__full-article</a></singleline>"
+            })
+
+        </table>
+
+    </td>
+</tr>

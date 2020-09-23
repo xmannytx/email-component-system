@@ -1,0 +1,14 @@
+@@if (context.hedcut === true) {
+    <tr>
+        <td class="hedcut__img" align="center" height="@@if (typeof context.height === "number") {@@height}@@if (typeof context.height !== "number") {58}" valign="top">
+            @@hedcut__hedcut
+        </td>
+    </tr>
+}
+<tr>
+    <td class="hedcut__title sans"
+	@@if (context.align === undefined) { align="center"}
+	@@if (typeof context.align === "string") { align="@@align"} valign="top">
+        @@hedcut__title
+    </td>
+</tr>

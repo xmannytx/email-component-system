@@ -1,0 +1,13 @@
+<tr>
+    <td valign="top" class="img" @@if (context.center === true) {align="center" }>
+        <table width="100%" align="center">
+            @@if (typeof context.link === "string") {
+                <tr>
+                    <td align="center" valign="middle">
+                        @@link
+                    </td>
+                </tr>
+            }
+        </table>
+    </td>
+</tr>

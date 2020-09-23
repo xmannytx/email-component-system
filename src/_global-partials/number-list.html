@@ -1,0 +1,152 @@
+<tr>
+    <td class="email-body__article nl" valign="top">
+        <table class="responsive" width="53" align="left">
+            <tr>
+				<td class="hide-p" valign="top">
+                    <multiline label="Number">
+						<table width="100%">
+							<tr>
+								<td class="nl--border" valign="top">
+									<table class="responsive" width="53" align="left">
+										<tr>
+											<td class="nl__number">@@num</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</multiline>
+                </td>
+            </tr>
+        </table>
+        <table class="responsive" width="475" align="right">
+            <tr>
+                <td class="td email-body__space@@if (context.linkedHeadlines === true) { nl__linked-headlines}" valign="top">
+                    @@if (context.imgFloat === true) {
+                        <table class="responsive" align="right">
+                            <tr>
+                                <td class="nl__img-float">
+                                    <img label="Right Image" class="responsive-img" editable="true" src="http://via.placeholder.com/400x280?text=placeholder" width="200" />
+                                </td>
+                            </tr>
+                        </table>
+                    }
+                    @@if (context.img === true) {
+                        <table width="100%">
+                            <tr>
+                                <td class="email-body__article" valign="top">
+                                    <p><strong><singleline label="Headline">@@headline</singleline></strong></p>
+                                </td>
+                            </tr>
+                            @@include('img.html', {
+                                "img__tag": "<img label=\"Image - Fullwidth\" class=\"responsive-img\" editable=\"true\" src=\"http://via.placeholder.com/475x320?text=placeholder\" width=\"475\" />",
+                                "imgCaption": "<multiline label=\"Image Caption + Credit\">Img caption/IMG CREDIT HERE</multiline>"
+                            })
+                        </table>
+                    }
+
+                    @@if (context.video === true) {
+                        <table width="100%">
+                            <tr>
+                                <td class="email-body__article" valign="top">
+                                    <p><strong><singleline label="Headline">@@headline</singleline></strong></p>
+                                </td>
+                            </tr>
+							<tr>
+								<td class="mobile-hide" valign="top">
+									<div class="mobile-hide">
+										<table width="100%">
+											@@include('img.html', {
+												"img__tag": "<img label=\"Large - Video Thumbnail\" class=\"responsive-img\" editable=\"true\" src=\"http://via.placeholder.com/475x316?text=lg-video-thumb\" width=\"475\" />"
+											})
+										</table>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="mobile-show" style="display: none; width: 0; max-height: 0; overflow: hidden;" valign="top">
+									<!--[if mso]>
+									 <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#nothing" style="display: none; height: 0px; width:0" stroke="f" fillcolor="#FFFFFF">
+									 <w:anchorlock/>
+									<![endif]-->
+									<table width="100%">
+										@@include('img.html', {
+											"img__tag": "<img label=\"Small - Video Thumbnail\" class=\"responsive-img\" editable=\"true\" src=\"http://via.placeholder.com/475x316?text=sm-video-thumb\" width=\"475\" />"
+										})
+									</table>
+									<!--[if mso]>
+									 </v:rect>
+									<![endif]-->
+								</td>
+							</tr>
+                        </table>
+                    }
+                    @@if (context.podcast === true) {
+                        <table width="100%">
+                            @@include('podcast.html', {
+                                "lWidth": 171,
+                                "rWidth": 275,
+								"btnWidth": "260",
+                                "podcast__img": "<img label=\"Podcast – Image\" class=\"responsive-img\" editable=\"true\" src=\"http://via.placeholder.com/342x342?text=Placeholder\" alt=\"Alt text. \" width=\"171\" cm_dontimportimage>",
+                                "podcast__h2": "Maecenas sed diam eget risus varius blandit sit amet non magna.",
+                                "podcast__paragraph": "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod.",
+                                "podcast__btn-txt": "Listen Now"
+                            })
+                        </table>
+                    }
+                    <multiline label="Paragraphs">
+                        @@p
+                    </multiline>
+                    @@if (context.bigNumber === true) {
+                        <table width="100%">
+                            @@include('big-number.html', {
+                                "big-num--bg-color": "#F4F4F4",
+                                "big-num__num": "<singleline label=\"Number\">$800 Billion</singleline>",
+                                "big-num__txt": "<multiline label=\"Paragraph\">Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.</multiline>"
+                            })
+                        </table>
+                        <multiline label="Paragraphs">
+                            @@p
+                        </multiline>
+                    }
+                    @@if (context.quotebox === true) {
+                        <table width="100%">
+                            @@include('quotebox.html', {
+                                "quotebox--bg-color": "#F4F4F4",
+                                "quotebox__quote": "<multiline label=\"Quote\">“Etiam porta sem malesuada magna mollis euismod. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.”</multiline>",
+                                "quotebox__attribution": "<multiline label=\"Credit\">— BOE Gov. Mark Carney</multiline>"
+                            })
+                        </table>
+                        <multiline label="Paragraphs">
+                            @@p
+                        </multiline>
+                    }
+                    @@if (context.quote === true) {
+                        <table class="fix-quote-space" width="100%">
+                            @@include('quote.html', {
+                                "quote__content": "<multiline label=\"Quote – Paragraphs\">Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper.</multiline>",
+                                "quote__img": "<img label=\"Quote – Editor Hedcut\" editable=\"true\" src=\"http://s.wsj.net/newsletter/hedcut-paul-page.png\" width=\"40\" />",
+                                "quote__h3": "<singleline label=\"Quote – Byline\">By Fulano de Tal</singleline>"
+                            })
+                        </table>
+                    }
+                    <!--
+                    <multiline label="Social Media Buttons">
+                        <span style="padding: 0 3px 0 0;"><a href="https://www.facebook.com/sharer/sharer.php?u="><img src="http://s.wsj.net/newsletter/social/facebook.png" alt="Share on Facebook. " width="30"></a>&nbsp;&nbsp;</span>
+                        <span style="padding: 0 3px 0 0;"><a href="https://twitter.com/intent/tweet?url="><img src="http://s.wsj.net/newsletter/social/twitter.png" alt="Share on Twitter. " width="30"></a>&nbsp;&nbsp;</span>
+                        <span style="padding: 0 3px 0 0;"><a href="http://www.linkedin.com/shareArticle?mini=true&source=https://www.wsj.com&url="><img src="http://s.wsj.net/newsletter/social/linkedin.png" alt="Share on LinkedIn. " width="30"></a>&nbsp;&nbsp;</span>
+                        <!-
+                        <table>
+                            <tr>
+                                <td style="padding: 0 10px 0 0;" valign="top">Share this newsletter:&nbsp;&nbsp;&nbsp;<fblike><img style="vertical-align: middle;" src="http://s.wsj.net/newsletter/social/facebook.png" alt="Share on Facebook. " width="30"></fblike></td>
+                                <td style="padding: 0 10px 0 0;" valign="top"><tweet href="https://twitter.com/intent/tweet?url="><img src="http://s.wsj.net/newsletter/social/twitter.png" alt="Share on Twitter. " width="30"></tweet></td>
+                                <td style="padding: 0 10px 0 0;" valign="top"><forwardtoafriend><img src="http://s.wsj.net/newsletter/social/mail.png" alt="Forward to a friend. " width="30"></forwardtoafriend></td>
+                            </tr>
+                        </table>
+                        ->
+                    </multiline> -->
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>

@@ -1,0 +1,26 @@
+<tr>
+    <td valign="top" class="email-body__img" @@if (context.center === true) {align="center" }>
+        <table width="100%" align="center">
+
+            <tr>
+                <td  @@if (context.center === true) {align="center" }>
+                    @@img__tag
+                </td>
+            </tr>
+            @@if (typeof context.link === "string") {
+                <tr>
+                    <td style="padding:10px 0px;" align="center" valign="middle">
+                        @@link
+                    </td>
+                </tr>
+            } @@if (typeof context.imgCaption === "string") {
+                <tr>
+                    <td class="responsive-img__caption" @@if (context.center === true) {align="center" }>
+                        @@imgCaption
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </td>
+</tr>
