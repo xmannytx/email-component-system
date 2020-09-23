@@ -1,0 +1,46 @@
+@@include('hr.html', {
+    "hrPadding": "hr--md"
+})
+<tr>
+  <td class="follow-subscribe" valign="top">
+    <table class="responsive" width="100%" align="center">
+      <tr>
+        <td class="td td--first" valign="top" align="center">
+          <img class="follow-subscribe__icon hide-in-dark" src="http://s.wsj.net/newsletter/arrow-share-stroke-medium-dark-v2.png" width="24">
+		  @@if (context.noMSO === undefined) {<!--[if !mso]-->}
+		  <img class="follow-subscribe__icon show-in-dark" src="http://s.wsj.net/newsletter/arrow-share-stroke-medium-light.png" width="24">
+		  @@if (context.noMSO === undefined) {<!--[endif]-->}
+          <div class="follow-subscribe__text sans">
+            Share this email with a friend.
+            <br>
+            <forwardtoafriend>Forward</forwardtoafriend>
+          </div>
+        </td>
+        <td class="td td--last" valign="top" align="center">
+          <img class="follow-subscribe__icon hide-in-dark" src="http://s.wsj.net/newsletter/group-stroke-medium-dark-v2.png" width="24">
+		  @@if (context.noMSO === undefined) {<!--[if !mso]-->}
+		  <img class="follow-subscribe__icon show-in-dark" src="http://s.wsj.net/newsletter/group-stroke-medium-light.png" width="24">
+		  @@if (context.noMSO === undefined) {<!--[endif]-->}
+          <div class="follow-subscribe__text sans">
+            Forwarded this email by a friend?
+            <br>
+            @@if (typeof context.signUpHere === "string") {
+              @@signUpHere
+            }
+            @@if (context.signUpHere === undefined) {
+              <a href="http://www.wsj.com/newsletters?sub=@@emailId">Sign Up Here</a>
+            }
+          </div>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+@@if (context.hr === true) {
+    @@include('hr.html')
+}
+<tr>
+    <td>
+        <span class="hide"><singleline label="DO NOT EDIT THIS FIELD PLEASE!"><span class="hide"></span></singleline></span>
+    </td>
+</tr>

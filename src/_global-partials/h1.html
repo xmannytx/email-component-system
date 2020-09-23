@@ -1,0 +1,35 @@
+<tr>
+    <td @@if (context.padding === true) {class="email-body__space"} valign="top">
+
+        <table @@if (context.timestamp === true) {class="responsive" width="335" align="left"}
+               @@if (context.timestamp !== true) {width="100%"}>
+            <tr>
+                <td @@if (typeof context.align === "string") {align="@@align" }
+                    @@if (context.timestamp === true) {width="335" }valign="top">
+                    <h1>@@h1__content</h1>
+                </td>
+            </tr>
+        </table>
+
+        @@if (context.timestamp === true) {
+            <table class="responsive" width="175" align="right">
+                <tr>
+                    <td class="h1__timestamp" width="175" valign="top">
+                        @@h1__timestamp__date&nbsp;&nbsp;<span class="apple-link">@@h1__timestamp__time</span>&nbsp;&nbsp;<span class="apple-link small">@@h1__timestamp__timezone</span>
+                    </td>
+                </tr>
+            </table>
+        }
+
+        @@if (context.sub === true) {
+            <table width="100%">
+                <tr>
+                    <td class="sub-after-h1" valign="top">
+                        @@sub-after-h1__content
+                    </td>
+                </tr>
+            </table>
+        }
+
+    </td>
+</tr>

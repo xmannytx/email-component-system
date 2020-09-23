@@ -1,0 +1,76 @@
+<table class="footer" width="100%" align="center" bgcolor="@@footer--bg-color">
+    <tr>
+        <td class="footer__body" align="center" valign="top">
+            <table class="email-body" width="500" align="center">
+                @@if (context.minimal === true) {
+                    <tr>
+                        <td class="footer__article sans" align="center" valign="top">
+                            <img src="@@if (context.dark === undefined) {http://s.wsj.net/newsletter/powered-by-dow-jones-trans.png}@@if (context.dark === true) {http://s.wsj.net/newsletter/powered-by-dow-jones-white.png}" alt="Powered by Dow Jones" width="187">
+                        </td>
+                    </tr>
+                }
+                @@if (context.minimal === undefined) {
+                    <tr>
+                        <td class="footer__article sans" align="center" valign="top">
+                            <table>
+                                <tr>
+                                    <td class="footer__icon" align="right"><a href="http://m.onelink.me/edfab6b?@@footer__link--modTag"><img src="http://s.wsj.net/newsletter/apple-store.png" width="133" alt="Apple app store icon. "></a></td>
+                                    <td align="left"><a href="http://m.onelink.me/d53c6b9d?@@footer__link--modTag"><img src="http://s.wsj.net/newsletter/google-store.png" width="133" alt="Google app store icon. "></a></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="footer__article sans" align="center" valign="top">
+                            <table class="email-body" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="footer__responsive-link sans footer__responsive-link--first" align="center" valign="top">
+                                        [if:email-token]<a href="http://www.wsj.com/newsletters?unsub=@@footer__link--emailId&addr=[email-token]&@@footer__link--modTag">Unsubscribe</a>[else]<a href="http://www.wsj.com/newsletters?unsub=@@footer__link--emailId&addr=[email]&@@footer__link--modTag">Unsubscribe</a>[endif]<span class="mobile-hide">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+                                    </td>
+                                    <td class="footer__responsive-link sans" align="center" valign="top">
+                                        @@footer__link--newsletters<span class="mobile-hide">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+                                    </td>
+                                    <td class="footer__responsive-link sans" align="center" valign="top">
+                                        @@footer__link--contact-us<span class="mobile-hide">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+                                    </td>
+                                    <td class="footer__responsive-link sans" align="center" valign="top">
+                                        @@footer__link--privacy-policy<span class="mobile-hide">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+                                    </td>
+                                    <td class="footer__responsive-link sans" align="center" valign="top">
+                                        @@footer__link--cookie-policy
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td class="footer__article sans" align="center" valign="top">
+                        @@if (typeof context.translate1 === "string"){@@if (context.rmAddress !== true) {<br>}}@@if (context.rmAddress !== true) {Dow Jones & Company, Inc. 4300 U.S. Ro&zwnj;ute 1 No&zwnj;rth Monm&zwnj;outh Junc&zwnj;tion, N&zwnj;J 088&zwnj;52}@@if (context.minimal === undefined) {<br class="mobile-hide">You are currently subscribed as [email]. For further assistance, please contact Customer Service at @@customerService.}@@if (context.minimal === true) {<br>@@if (typeof context.translate1 === "string"){@@if (context.rmAddress !== true) {<br>}@@translate1<br>}Copyright&nbsp;<currentyear>&nbsp;Dow Jones &amp; Company, Inc. <span class="mobile-hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span> <span style="white-space:nowrap;">All Rights Reserved.</span>}
+                    </td>
+                </tr>
+                @@if (context.minimal === undefined) {
+                    <tr>
+                        <td class="footer__article sans" align="center" valign="top">
+                            Copyright&nbsp;<currentyear>&nbsp;Dow Jones &amp; Company, Inc. <span class="mobile-hide">&nbsp;&nbsp;|&nbsp;&nbsp;</span> <span style="white-space:nowrap;">All Rights Reserved.</span>
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td>
+                        <!-- Campaign Monitor's Unsubscribe -->
+
+                        <!--[if mso]>
+                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="#nothing" style="display: none; height: 0px; width:0" stroke="f" fillcolor="#FFFFFF">
+                            <w:anchorlock/>
+                        <![endif]-->
+                        <span class="hide"><unsubscribe>Unsubscribe</unsubscribe></span>
+                        <!--[if mso]>
+                            </v:rect>
+                        <![endif]-->
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

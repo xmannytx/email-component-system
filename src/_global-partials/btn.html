@@ -1,0 +1,11 @@
+<tr>
+    <td class="btn-padding">
+		<table align="@@align" @@if(typeof context.width === 'string'){width="@@width"}@@if(typeof context.width !== 'string'){width="100%"}@@if(context.responsive === true){ class="responsive"}>
+			<tr>
+				<td class="btn@@if(context.responsive === true){ responsive}" bgcolor="0274B6" align="center" @@if(typeof context.width === 'string'){width="@@width"}>
+					<a href="@@href" class="btn__link sans">@@innertext</a>
+				</td>
+			</tr>
+		</table>
+    </td>
+</tr>
