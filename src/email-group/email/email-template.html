@@ -1,13 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="color-scheme" content="light dark">
-    <meta name="supported-color-schemes" content="light dark">
-    <!--[if !mso]><!-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--<![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @@include('../../_global-partials/head.html')
     @@include('email-css.html')
 </head>
 
@@ -17,7 +11,7 @@
 
     <!-- Preheader Text -->
     @@include('../../_global-partials/preheader-text.html', {
-        "preheader-text__content": "Please provide a max of 60 characters of preheader text here"
+        "preheader-text__content": "<multiline label=\"Preheader Copy\">Please provide a max of 60 characters of preheader text here</multiline>"
     })
 
 
@@ -39,41 +33,90 @@
                             <table class="email-body" width="100%">
 
 
-                                @@include('../../_global-partials/hedcut.html', {
-                                    "hedcut": true,
-                                    "hedcut__hedcut": "<img width=\"68\" src=\"http://via.placeholder.com/68x58?text=hedcut\" alt=\"Stipple image. \">",
-                                    "hedcut__title": "Newsletter Name Here"
-                                })
+                                <repeater>
+
+
+                                    <layout label="hedcut">
+                                        <tr>
+                                            <td valign="top">
+                                                <table width="100%">
+                                                    @@include('../../_global-partials/hedcut.html', {
+                                                        "hedcut": true,
+                                                        "hedcut__hedcut": "<img label=\"hedcut\" width=\"68\" editable=\"true\" src=\"http://via.placeholder.com/68x58?text=hedcut\" alt=\"Stipple image. \">",
+                                                        "hedcut__title": "<singleline label=\"title\">Newsletter Name Here</singleline>"
+                                                    })
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </layout>
 
 
 
-                                @@include('../../_global-partials/hr.html')
-                                @@include('../../_global-partials/h1.html', {
-                                    "h1__content": "Section Name",
-                                    "padding": true
-                                })
+                                    <layout label="section name">
+                                        <tr>
+                                            <td valign="top">
+                                                <table width="100%">
+                                                    @@include('../../_global-partials/hr.html')
+                                                    @@include('../../_global-partials/h1.html', {
+                                                        "h1__content": "<singleline label=\"Section Name\">Section Name</singleline>",
+                                                        "padding": true
+                                                    })
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </layout>
 
 
 
-                                @@include('../../_global-partials/h2.html', {
-                                    "h2__content": "This is a Headline",
-                                    "padding": true
-                                })
+                                    <layout label="headline">
+                                        <tr>
+                                            <td valign="top">
+                                                <table width="100%">
+                                                    @@include('../../_global-partials/h2.html', {
+                                                        "h2__content": "<singleline label=\"Headline\">This is a Headline</singleline>",
+                                                        "padding": true
+                                                    })
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </layout>
 
 
 
-                                @@include('../../_global-partials/p.html', {
-                                    "p__content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>",
-                                    "padding": "normal"
-                                })
+                                    <layout label="paragraphs">
+                                        <tr>
+                                            <td valign="top">
+                                                <table width="100%">
+                                                    @@include('../../_global-partials/p.html', {
+                                                        "p__content": "<multiline label=\"paragraphs\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</multiline>",
+                                                        "padding": "normal"
+                                                    })
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </layout>
 
 
 
-                                @@include('../../_global-partials/img.html', {
-                                    "img__tag": "<img label=\"Image - Fullwidth\" class=\"responsive-img\" editable=\"true\" src=\"http://via.placeholder.com/540x360?text=placeholder\" width=\"540\" />",
-                                    "imgCaption": "This is the caption and credit for the image above"
-                                })
+                                    <layout label="image - fullwidth">
+                                        <tr>
+                                            <td valign="top">
+                                                <table width="100%">
+                                                    @@include('../../_global-partials/img.html', {
+                                                        "img__tag": "<img label=\"Image - Fullwidth\" class=\"responsive-img\" editable=\"true\" src=\"http://via.placeholder.com/540x360?text=placeholder\" width=\"540\" />",
+                                                        "imgCaption": "This is the caption and credit for the image above"
+                                                    })
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </layout>
 
+
+
+
+
+
+                                </repeater>
 
 
                             </table>
