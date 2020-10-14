@@ -1,4 +1,4 @@
-# Email component system
+# Email Component System
 
 The goal is to build a library of well-designed and tested HTML components that will aid in assembling new email templates with ease.
 
