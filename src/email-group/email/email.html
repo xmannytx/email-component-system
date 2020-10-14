@@ -1,86 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    @@include('../../_global-partials/head.html')
-    @@include('email-css.html')
+
 </head>
 
 <body>
-
-
-
-    <!-- Preheader Text -->
-    @@include('../../_global-partials/preheader-text.html', {
-        "preheader-text__content": "Please provide a max of 60 characters of preheader text here"
-    })
-
-
-
-    <!-- Header -->
-    @@include('../../_global-partials/header.html', {
-        "header--bg-color": "#FFFFFF",
-        "header__content": "<img class=\"hide-in-dark\" src=\"http://s.wsj.net/newsletter/the-wall-street-journal-light-v4.png\" alt=\"The Wall Street Journal. \" width=\"302\" /><img class=\"show-in-dark\"src=\"http://s.wsj.net/newsletter/the-wall-street-journal-dark.png\" alt=\"The Wall Street Journal. \" width=\"302\" />"
-    })
-
-
-    <!-- center email body -->
-    <table class="email-body-bg" width="100%" bgcolor="#F4F4F4">
-        <tr>
-            <td class="stage-out">
-                <table class="email-body" width="600" align="center" bgcolor="#FFFFFF">
-                    <tr>
-                        <td class="stage-in">
-                            <table class="email-body" width="100%">
-
-
-                                @@include('../../_global-partials/hedcut.html', {
-                                    "hedcut": true,
-                                    "hedcut__hedcut": "<img width=\"68\" src=\"http://via.placeholder.com/68x58?text=hedcut\" alt=\"Stipple image. \">",
-                                    "hedcut__title": "Newsletter Name Here"
-                                })
-
-
-
-                                @@include('../../_global-partials/hr.html')
-                                @@include('../../_global-partials/h1.html', {
-                                    "h1__content": "Section Name",
-                                    "padding": true
-                                })
-
-
-
-                                @@include('../../_global-partials/h2.html', {
-                                    "h2__content": "This is a Headline",
-                                    "padding": true
-                                })
-
-
-
-                                @@include('../../_global-partials/p.html', {
-                                    "p__content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>",
-                                    "padding": "normal"
-                                })
-
-
-
-                                @@include('../../_global-partials/img.html', {
-                                    "img__tag": "<img label=\"Image - Fullwidth\" class=\"responsive-img\" editable=\"true\" src=\"http://via.placeholder.com/540x360?text=placeholder\" width=\"540\" />",
-                                    "imgCaption": "This is the caption and credit for the image above"
-                                })
-
-
-
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
-
-
-
-    @@include('../../_global-partials/footer.html')
-
 
 </body>
