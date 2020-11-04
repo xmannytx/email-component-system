@@ -40,6 +40,14 @@ function emailBuilder() {
     .pipe(dest(paths.dist));
 }
 
+function assets(done) {
+    return src([
+            paths.src + '_assets/**/*'
+        ])
+        .pipe(dest(paths.dist + '_assets/'));
+        done();
+}
+
 function clean(done) {
 	del.sync(paths.dist);
 	done();
@@ -62,10 +70,10 @@ function reload(done) {
 }
 
 function watchFiles() {
-	watch(paths.src + '**/*.html', series(emailBuilder, reload));
-    watch(paths.src + '**/*.css', series(emailBuilder, reload));
+	watch(paths.src + '**/*.html', series(emailBuilder, assets, reload));
+    watch(paths.src + '**/*.css', series(emailBuilder, assets, reload));
 }
 
-exports.build = series(clean, emailBuilder);
+exports.build = series(clean, emailBuilder, assets);
 exports.watch = watchFiles;
-exports.default = series(clean, emailBuilder, serve, watchFiles);
+exports.default = series(clean, emailBuilder, assets, serve, watchFiles);
