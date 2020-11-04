@@ -1,0 +1,8 @@
+.container {
+    background-color: #F4F4F4;
+    width: 100%;
+}
+.inner-container {
+    background-color: #FFF;
+    width: 600px;
+}
