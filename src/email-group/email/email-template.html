@@ -13,21 +13,15 @@
                     <tr>
                         <td>
                             <table width="100%">
-                                <tr>
-                                    <td align="center">
-                                        <img src="../../_assets/books.png" alt="books" width="92px" height="60px">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="center">
-                                        BOOKS
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="comment">
-                                        Greetings! Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor vel scelerisque nisl.
-                                    </td>
-                                </tr>
+                                @@include('../../_global-partials/hedcut.html', {
+                                    "hedcutImg": "<img src=\"../../_assets/books.png\" alt=\"books\" width=\"92px\" height=\"60px\">",
+                                    "hedcutTitle": "BOOKS"
+                                })
+
+                                @@include('../../_global-partials/paragraph.html', {
+                                    "paragraph": "Greetings! Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor vel scelerisque nisl."
+                                })
+
                                 <tr>
                                     <td>
                                         Origin Story
@@ -35,16 +29,31 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <img src="../../_assets/img1.jpg" alt="Navy AirCraft" width="540px" height="518px">
+                                        <img src="../../_assets/img1.jpg" alt="Navy AirCraft" width="540">
+                                        <br><br>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>
-                                        They call it Big History: an attempt to stitch all of Earth's past into one global story. Australian professor David Christian has received plaudits (and major funding) from Bill Gates, and his new book Origin Story takes
-                                        us from the Big Bang to the evolution of life on earth and—only recently—human society. The ambitious but flawed work turns out to be a case against parochial perspectives on human existence and for coordinated global
-                                        action, writes reviewer David Wootton. But shouldn’t his study of history have made him realize how unlikely such cooperation will be?
-                                    </td>
-                                </tr>
+                                @@include('../../_global-partials/paragraph.html', {
+                                    "paragraph": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?",
+                                    "align": "left"
+                                })
+
+                                @@include('../../_global-partials/hr.html', {
+                                })
+
+                                @@include('../../_global-partials/forward-subscribe.html', {
+                                })
+
+                                @@include('../../_global-partials/hr.html', {
+                                })
+
+                                @@include('../../_global-partials/two-col.html', {
+                                })
+
+                                @@include('../../_global-partials/hr.html', {
+                                })
+
+
                             </table>
                         </td>
                     </tr>
@@ -52,4 +61,7 @@
             </td>
         </tr>
     </table>
+    <unsubscribe>
+        Unsubscribe
+    </unsubscribe>
 </body>
