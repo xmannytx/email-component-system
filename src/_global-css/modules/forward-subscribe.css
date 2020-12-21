@@ -1,0 +1,13 @@
+.forward-subscribe > :first-child .td {
+    border-right: 1px solid #CCCCCC;
+    padding: 0 43px 0;
+}
+.forward-subscribe > :last-child .td {
+    padding-right: 22px;
+}
+.forward-subscribe p {
+    margin: 8px 0 3px 0;
+}
+.forward-subscribe {
+    padding: 20px 0 20px 0
+}
