@@ -1,20 +1,16 @@
 <tr>
     <td>
-        <table align="left">
+        <table @@if(typeof context.lwidth === 'number'){width="@@lwidth" }align="left">
             <tr>
                 <td class="left-column-content">
-                    @@leftColImg
+                    @@leftColContent
                 </td>
             </tr>
         </table>
-        <table align="right">
+        <table @@if(typeof context.rwidth === 'number'){width="@@rwidth" }align="right">
             <tr>
-                <td class="right-column-content">
-                    Star of the North: a CIA thriller set in North and South Korea
-                    <br>
-                    <a href="">Read Review</a>
-                    <br>
-                    By Tom Nolan
+                <td class="right-column-content default-paragraph">
+                    @@rightColContent
                 </td>
             </tr>
         </table>
