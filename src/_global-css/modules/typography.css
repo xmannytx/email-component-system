@@ -5,9 +5,20 @@
     font-size: 14px;
     line-height: 18px;
 }
-body {
+body,
+.default-paragraph {
     color: #333;
+    line-height: 24px;
+}
+.default-paragraph p {
+    margin-bottom: 16px;
 }
 a {
     color: #0080C3;
+}
+.byline {
+    /* line-height: 18px; */
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
 }
