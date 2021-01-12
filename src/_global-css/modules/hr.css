@@ -1,5 +1,27 @@
-.hr-td {
-    border-bottom: 1px solid #D8D8D8;
-    height: 1px;
+.hr {
+    padding: 36px 0 20px 0;
+}
+.hr .td {
+    border-bottom: 1px solid #CCCCCC;
     width: 100%;
+}
+
+.hr--first {
+    padding: 0 0 20px;
+}
+
+.hr--lg {
+    padding: 20px 0 24px 0;
+}
+
+.hr--md {
+    padding: 8px 0 24px 0;
+}
+
+.hr--sm {
+    padding: 8px 0 8px 0;
+}
+
+.hr--none {
+    padding: 0;
 }
