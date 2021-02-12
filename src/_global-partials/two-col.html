@@ -1,13 +1,13 @@
 <tr>
     <td>
-        <table @@if(typeof context.lwidth === 'number'){width="@@lwidth" }align="left">
+        <table class="responsive" @@if(typeof context.lwidth === 'number'){width="@@lwidth" }align="left">
             <tr>
                 <td class="left-column-content">
                     @@leftColContent
                 </td>
             </tr>
         </table>
-        <table @@if(typeof context.rwidth === 'number'){width="@@rwidth" }align="right">
+        <table class="responsive" @@if(typeof context.rwidth === 'number'){width="@@rwidth" }align="right">
             <tr>
                 <td class="right-column-content default-paragraph">
                     @@rightColContent
