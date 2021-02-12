@@ -8,6 +8,10 @@
 .forward-subscribe p {
     margin: 8px 0 3px 0;
 }
-.forward-subscribe {
-    /* padding: 20px 0 20px 0 */
+@media only screen and (max-width:600px) {
+    .forward-subscribe > :first-child .td {
+        border-bottom: 1px solid #CCCCCC;
+        border-right: 0 !important;
+    }
+
 }
