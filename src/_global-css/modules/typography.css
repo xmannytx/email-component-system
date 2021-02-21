@@ -17,8 +17,8 @@ a {
     color: #0080C3;
 }
 .byline {
-    /* line-height: 18px; */
     font-style: italic;
     color: #666;
     font-size: 14px;
+    font-family: georgia, serif;
 }

@@ -4,3 +4,7 @@
 .inner-container > tr > td {
     padding: 26px 30px 30px;
 }
+.greetings {
+    font-style: italic;
+    font-size: 16px;
+}
