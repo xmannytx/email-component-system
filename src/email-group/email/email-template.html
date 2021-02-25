@@ -16,17 +16,18 @@
                                     "hedcutTitle": "Books"
                                 })
                                 @@include('../../_global-partials/paragraph.html', {
-                                    "paragraph": "Greetings! Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor vel scelerisque nisl."
+                                    "paragraph": "<em>Greetings! Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor vel scelerisque nisl.</em>"
                                 })
                                 @@include('../../_global-partials/hr.html')
                                 <tr>
                                     <td>
-                                        <h2>Origin Story</h2>
+                                        <h2 class="large sans">Origin Story</h2>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <img class="responsive-img" src="../../_assets/img1.jpg" alt="Navy AirCraft" width="540">
+                                        Navy personnel manning anti-aircraft guns on board the USS Arkansas in February 1944.
                                         <br><br>
                                     </td>
                                 </tr>
@@ -47,12 +48,10 @@
                                     "rwidth": 449
                                 })
                                 @@include('../../_global-partials/hr.html')
-                                <tr>
-                                    <td>
-                                        <h2>Biography</h2>
-                                        The Inner Lives of Artists
-                                    </td>
-                                </tr>
+                                @@include('../../_global-partials/heading.html', {
+                                    "heading": "Biography",
+                                    "subHeading": "The Inner Lives of Artists"
+                                })
                                 @@include('../../_global-partials/two-col.html', {
                                     "leftColContent": "<img class=\"responsive\" src=\"../../_assets/george-sand.jpg\" alt=\"george-sand\" width=\"255\" editable=\"true\">",
                                     "rightColContent": "<img class=\"responsive\" src=\"../../_assets/the-lives-of-surrealists.jpg\" alt=\"the-lives-of-surrealists.jpg\" width=\"255\" editable=\"true\">",
@@ -68,7 +67,7 @@
                                 @@include('../../_global-partials/hr.html')
                                 <tr>
                                     <td>
-                                        <h2>Children's Books</h2>
+                                        <h2 class="large sans">Children's Books</h2>
                                     </td>
                                 </tr>
                                 @@include('../../_global-partials/two-col.html', {
@@ -78,12 +77,10 @@
                                     "rwidth": 449
                                 })
                                 @@include('../../_global-partials/hr.html')
-                                <tr>
-                                    <td>
-                                        <h2>History</h2>
-                                        How Empires End
-                                    </td>
-                                </tr>
+                                @@include('../../_global-partials/heading.html', {
+                                    "heading": "History",
+                                    "subHeading": "How Empires End"
+                                })
                                 @@include('../../_global-partials/two-col.html', {
                                     "leftColContent": "<img class=\"responsive\" src=\"../../_assets/imperial-twilight.png\" alt=\"imperial-twilight\" width=\"255\" editable=\"true\">",
                                     "rightColContent": "<img class=\"responsive\" src=\"../../_assets/chernobyl.png\" alt=\"chernobyl\" width=\"255\" editable=\"true\">",
@@ -99,7 +96,7 @@
                                 @@include('../../_global-partials/hr.html')
                                 <tr>
                                     <td>
-                                        <h2>Fiction</h2>
+                                        <h2 class="large sans">Fiction</h2>
                                     </td>
                                 </tr>
                                 @@include('../../_global-partials/two-col.html', {
@@ -109,12 +106,10 @@
                                     "rwidth": 449
                                 })
                                 @@include('../../_global-partials/hr.html')
-                                <tr>
-                                    <td>
-                                        <h2>Biography</h2>
-                                        Revolutionary Generals
-                                    </td>
-                                </tr>
+                                @@include('../../_global-partials/heading.html', {
+                                    "heading": "Biography",
+                                    "subHeading": "Revolutionary Generals"
+                                })
                                 @@include('../../_global-partials/two-col.html', {
                                     "leftColContent": "<img class=\"responsive\" src=\"../../_assets/indian-world.png\" alt=\"indian-world\" width=\"255\" editable=\"true\">",
                                     "rightColContent": "<img class=\"responsive\" src=\"../../_assets/unlikely-general.png\" alt=\"unlikely-general\" width=\"255\" editable=\"true\">",
@@ -138,16 +133,16 @@
                                 })
                                 <tr>
                                     <td>
-                                        <ol style="padding: 13px 0 5px 15px;">
-                                            <li><b>George Sand</b> – By Martine Reid</li>
-                                            <li><b>The Lives of the Surrealists</b> – By Desmond Morris</li>
-                                            <li><b>Imperial Twilight</b> – By Stephen Platt</li>
-                                            <li><b>George Washington</b> – By Colin G. Calloway</li>
-                                            <li><b>Unlikely General</b> – By Mary Stockwell</li>
+                                        <ol>
+                                            <li><strong>George Sand</strong> – By Martine Reid</li>
+                                            <li><strong>The Lives of the Surrealists</strong> – By Desmond Morris</li>
+                                            <li><strong>Imperial Twilight</strong> – By Stephen Platt</li>
+                                            <li><strong>George Washington</strong> – By Colin G. Calloway</li>
+                                            <li><strong>Unlikely General</strong> – By Mary Stockwell</li>
                                         </ol>
-                                        <a href="">Read More</a>
+                                        <a href="#doNothing">Read More</a>
                                         <br><br>
-                                        <a href="">The Wall Street Journal best-seller list</a> is​ compiled from NPD bookscan data.
+                                        <a href="#doNothing">The Wall Street Journal best-seller list</a> is​ compiled from NPD bookscan data.
                                     </td>
                                 </tr>
                                 @@include('../../_global-partials/hr.html')
