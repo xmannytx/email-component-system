@@ -1,14 +1,9 @@
-.sans {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-}
-.small {
-    font-size: 14px;
-    line-height: 18px;
-}
 body,
 .default-paragraph {
     color: #333;
+    font-size: 16px;
     line-height: 24px;
+    font-family: "Georgia", "Times", "Times New Roman", serif !important;
 }
 .default-paragraph p {
     margin-bottom: 16px;
@@ -20,5 +15,22 @@ a {
     font-style: italic;
     color: #666;
     font-size: 14px;
-    font-family: georgia, serif;
+    font-family: "Georgia", "Times", "Times New Roman", serif !important;
+}
+.sans {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+.small {
+    font-size: 14px;
+    line-height: 18px;
+}
+.medium {
+    font-style: 16px
+    line-height: 22px;
+    font-weight: normal;
+}
+.large {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal;
 }

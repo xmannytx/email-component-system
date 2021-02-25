@@ -18,5 +18,9 @@
         width: auto !important;
         max-width: 100% !important;
     }
-    
+
+}
+ol {
+    padding: 13px 0 5px 15px;
+    line-height: 24px;
 }
