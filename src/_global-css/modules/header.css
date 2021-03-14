@@ -1,11 +1,7 @@
-.header {
+.view-in-browser {
     color: #999999;
     border-bottom: 1px solid #D8D8D8;
     padding: 9px 0;
     font-size: 12px;
     -webkit-font-smoothing: antialiased;
-}
-
-.link1 {
-    color: #999999;
 }

@@ -6,6 +6,10 @@
     background-color: #FFF;
     width: 600px;
 }
+.block,
+.responsive-img {
+    display: block;
+}
 @media only screen and (max-width:600px) {
     .responsive {
         width: 100% !important;
