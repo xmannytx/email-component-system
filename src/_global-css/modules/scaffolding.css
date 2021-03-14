@@ -2,15 +2,25 @@
     background-color: #F4F4F4;
     width: 100%;
 }
+.container-padding {
+    padding-top: 30px;
+}
 .inner-container {
     background-color: #FFF;
     width: 600px;
+}
+.inner-container-padding {
+    padding: 26px 30px 30px;
 }
 .block,
 .responsive-img {
     display: block;
 }
 @media only screen and (max-width:600px) {
+    .container-padding {
+        padding-top: 0 !important;
+        border-top: 1px solid #CCC;
+    }
     .responsive {
         width: 100% !important;
     }
