@@ -13,19 +13,17 @@
                     <tr>
                         <td class="inner-container-padding">
                             <table role="presentation" width="100%">
-                                @@include('../../_global-partials/hedcut.html', {
-                                    "hedcutImg": "<img src=\"../../_assets/books.png\" alt=\"\" width=\"92\">",
-                                    "hedcutTitle": "Books"
+                                @@include('../../_global-partials/h1.html', {
+                                    "textContent": "Books",
+                                    "hedcutImg": "<img src=\"../../_assets/books.png\" alt=\"\" width=\"92\">"
                                 })
                                 @@include('../../_global-partials/paragraph.html', {
-                                    "paragraph": "<em>Greetings! Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor vel scelerisque nisl.</em>"
+                                    "textContent": "<p><em>Greetings! Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor vel scelerisque nisl.</em></p>"
                                 })
                                 @@include('../../_global-partials/hr.html')
-                                <tr>
-                                    <td>
-                                        <h2 class="large sans">Origin Story</h2>
-                                    </td>
-                                </tr>
+                                @@include('../../_global-partials/h2.html', {
+                                    "textContent": "Origin Story"
+                                })
                                 <tr>
                                     <td>
                                         <img class="responsive-img" src="../../_assets/img1.jpg" alt="Navy AirCraft" width="540">
@@ -34,7 +32,7 @@
                                     </td>
                                 </tr>
                                 @@include('../../_global-partials/paragraph.html', {
-                                    "paragraph": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?",
+                                    "textContent": "<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>",
                                     "align": "left"
                                 })
                                 @@include('../../_global-partials/hr.html')
@@ -50,8 +48,8 @@
                                     "rwidth": 449
                                 })
                                 @@include('../../_global-partials/hr.html')
-                                @@include('../../_global-partials/heading.html', {
-                                    "heading": "Biography",
+                                @@include('../../_global-partials/h2.html', {
+                                    "textContent": "Biography",
                                     "subHeading": "The Inner Lives of Artists"
                                 })
                                 @@include('../../_global-partials/two-col.html', {
@@ -67,11 +65,9 @@
                                     "rwidth": 255
                                 })
                                 @@include('../../_global-partials/hr.html')
-                                <tr>
-                                    <td>
-                                        <h2 class="large sans">Children's Books</h2>
-                                    </td>
-                                </tr>
+                                @@include('../../_global-partials/h2.html', {
+                                    "textContent": "Children's Books"
+                                })
                                 @@include('../../_global-partials/two-col.html', {
                                     "leftColContent": "<img src=\"../../_assets/meghan-gurdon.png\" alt=\"meghan-gurdon\" width=\"80\" editable=\"true\">",
                                     "rightColContent": "<p>Racing Manhattan and other novels for young readers<br><a href=\"\">Read Review</a><br><span class=\"byline\">By Meghan Cox</span></p>",
@@ -79,8 +75,8 @@
                                     "rwidth": 449
                                 })
                                 @@include('../../_global-partials/hr.html')
-                                @@include('../../_global-partials/heading.html', {
-                                    "heading": "History",
+                                @@include('../../_global-partials/h2.html', {
+                                    "textContent": "History",
                                     "subHeading": "How Empires End"
                                 })
                                 @@include('../../_global-partials/two-col.html', {
@@ -96,45 +92,14 @@
                                     "rwidth": 255
                                 })
                                 @@include('../../_global-partials/hr.html')
-                                <tr>
-                                    <td>
-                                        <h2 class="large sans">Fiction</h2>
-                                    </td>
-                                </tr>
-                                @@include('../../_global-partials/two-col.html', {
-                                    "leftColContent": "<img src=\"../../_assets/sam-sacks.png\" alt=\"sam-sacks\" width=\"80\" editable=\"true\">",
-                                    "rightColContent": "<p>A View of the Empire at Sunset and other new gothic novels.<br><a href=\"\">Read Review</a><br><span class=\"byline\">By Sam Sacks</span></p>",
-                                    "lwidth": 80,
-                                    "rwidth": 449
+                                @@include('../../_global-partials/h2.html', {
+                                    "textContent": "Five Best: America’s Hours of Crisis"
                                 })
-                                @@include('../../_global-partials/hr.html')
-                                @@include('../../_global-partials/heading.html', {
-                                    "heading": "Biography",
-                                    "subHeading": "Revolutionary Generals"
-                                })
-                                @@include('../../_global-partials/two-col.html', {
-                                    "leftColContent": "<img class=\"responsive\" src=\"../../_assets/indian-world.png\" alt=\"indian-world\" width=\"255\" editable=\"true\">",
-                                    "rightColContent": "<img class=\"responsive\" src=\"../../_assets/unlikely-general.png\" alt=\"unlikely-general\" width=\"255\" editable=\"true\">",
-                                    "lwidth": 255,
-                                    "rwidth": 255
-                                })
-                                @@include('../../_global-partials/two-col.html', {
-                                    "leftColContent": "<multiline label=\"Paragraphs\"></multiline>",
-                                    "rightColContent": "<multiline label=\"Paragraphs\"></multiline>",
-                                    "lwidth": 255,
-                                    "rwidth": 255
-                                })
-                                @@include('../../_global-partials/hr.html')
-                                <tr>
-                                    <td>
-                                        <h2>Five Best: America’s Hours of Crisis</h2>
-                                    </td>
-                                </tr>
                                 @@include('../../_global-partials/paragraph.html', {
-                                    "paragraph": "The author of “The Soul of America: The Battle for Our Better Angels” recommends works about the civil war, civil rights and the battles in between."
+                                    "textContent": "<p>The author of “The Soul of America: The Battle for Our Better Angels” recommends works about the civil war, civil rights and the battles in between.</p>"
                                 })
                                 <tr>
-                                    <td>
+                                    <td class="default-paragraph">
                                         <ol>
                                             <li><strong>George Sand</strong> – By Martine Reid</li>
                                             <li><strong>The Lives of the Surrealists</strong> – By Desmond Morris</li>
@@ -142,9 +107,8 @@
                                             <li><strong>George Washington</strong> – By Colin G. Calloway</li>
                                             <li><strong>Unlikely General</strong> – By Mary Stockwell</li>
                                         </ol>
-                                        <a href="#doNothing">Read More</a>
-                                        <br><br>
-                                        <a href="#doNothing">The Wall Street Journal best-seller list</a> is​ compiled from NPD bookscan data.
+                                        <p><a href="#doNothing">Read More</a></p>
+                                        <p><a href="#doNothing">The Wall Street Journal best-seller list</a> is​ compiled from NPD bookscan data.</p>
                                     </td>
                                 </tr>
                                 @@include('../../_global-partials/hr.html')
