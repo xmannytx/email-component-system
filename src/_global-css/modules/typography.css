@@ -1,6 +1,6 @@
 body,
 .default-paragraph {
-    color: #333;
+    color: #333333;
     font-size: 16px;
     line-height: 24px;
     font-family: "Georgia", "Times", "Times New Roman", serif !important;
@@ -13,7 +13,7 @@ a {
 }
 .byline {
     font-style: italic;
-    color: #666;
+    color: #666666;
     font-size: 14px;
     font-family: "Georgia", "Times", "Times New Roman", serif !important;
 }
