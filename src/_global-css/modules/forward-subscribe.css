@@ -1,17 +1,20 @@
-.forward-subscribe > :first-child .td {
+.forward-subscribe .col-1 {
     border-right: 1px solid #CCCCCC;
     padding: 0 43px 0;
 }
-.forward-subscribe > :last-child .td {
-    padding-right: 22px;
+.forward-subscribe .col-2 {
+    padding: 0 22px 0 0;
 }
 .forward-subscribe p {
     margin: 8px 0 3px 0;
 }
 @media only screen and (max-width:600px) {
-    .forward-subscribe > :first-child .td {
+    .forward-subscribe .col-1 {
+        border-right: none !important;
         border-bottom: 1px solid #CCCCCC;
-        border-right: 0 !important;
+        padding: 0 0 20px !important;
     }
-
+    .forward-subscribe .col-2 {
+        padding: 20px 0 0 !important;
+    }
 }
