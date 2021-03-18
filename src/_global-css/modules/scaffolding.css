@@ -6,14 +6,13 @@
     padding-top: 30px;
 }
 .inner-container {
-    background-color: #FFFFFF;
+    background-color: #FFF;
     width: 600px;
 }
 .inner-container-padding {
     padding: 26px 30px 30px;
 }
-.block,
-.responsive-img {
+.block {
     display: block;
 }
 @media only screen and (max-width:600px) {

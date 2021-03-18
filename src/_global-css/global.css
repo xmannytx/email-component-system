@@ -1,7 +1,6 @@
 @@include('modules/reset.css')
 @@include('modules/scaffolding.css')
 @@include('modules/header.css')
-@@include('modules/paragraph.css')
 @@include('modules/typography.css')
 @@include('modules/hr.css')
 @@include('modules/forward-subscribe.css')
