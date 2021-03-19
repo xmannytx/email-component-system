@@ -1,6 +1,6 @@
-/* include('modules/scaffolding-embed.css')
-include('modules/typography-embed.css')
-include('modules/body-embed.css') */
+/* include('modules/scaffolding-embed.css') */
+@@include('modules/typography-embed.css')
+/* include('modules/body-embed.css') */
 @@include('modules/header-embed.css')
 /* include('modules/footer-embed.css')
 include('modules/darkmode-embed.css') */

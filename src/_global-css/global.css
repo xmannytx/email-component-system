@@ -4,7 +4,6 @@
 @@include('modules/typography.css')
 @@include('modules/hr.css')
 @@include('modules/forward-subscribe.css')
-@@include('modules/two-col.css')
 @@include('modules/prefooter.css')
 @@include('modules/footer.css')
 /* include('modules/darkmode.css') */

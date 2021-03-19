@@ -1,12 +1,11 @@
 body,
-.default-paragraph {
+.default-paragraph,
+.col-1,
+.col-2 {
     color: #333333;
     font-size: 16px;
     line-height: 24px;
     font-family: "Georgia", "Times", "Times New Roman", serif !important;
-}
-.default-paragraph p {
-    margin-bottom: 16px;
 }
 a {
     color: #0080C3;
