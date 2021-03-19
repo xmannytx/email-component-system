@@ -12,12 +12,10 @@
 .inner-container-padding {
     padding: 26px 30px 30px;
 }
-.col-1,
-.col-2 {
+.row {
     padding-bottom: 20px;
 }
-.col-1 p,
-.col-2 p {
+.row p {
     margin: 0;
 }
 .block {
