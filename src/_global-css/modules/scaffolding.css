@@ -2,11 +2,30 @@
     background-color: #F4F4F4;
     width: 100%;
 }
+.container-padding {
+    padding-top: 30px;
+}
 .inner-container {
     background-color: #FFF;
     width: 600px;
 }
+.inner-container-padding {
+    padding: 26px 30px 22px;
+}
+.row {
+    padding-bottom: 20px;
+}
+.row p {
+    margin: 0;
+}
+.block {
+    display: block;
+}
 @media only screen and (max-width:600px) {
+    .container-padding {
+        padding-top: 0 !important;
+        border-top: 1px solid #CCCCCC;
+    }
     .responsive {
         width: 100% !important;
     }
@@ -18,7 +37,6 @@
         width: auto !important;
         max-width: 100% !important;
     }
-
 }
 ol {
     padding: 13px 0 5px 15px;

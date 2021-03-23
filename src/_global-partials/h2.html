@@ -1,0 +1,12 @@
+<tr>
+    <td>
+        <h2@@if(typeof context.subHeading === 'string'){ class="h2-plus-sub"}>@@textContent</h2>
+    </td>
+</tr>
+@@if(typeof context.subHeading === 'string'){
+    <tr>
+        <td class="subheading">
+            @@subHeading
+        </td>
+    </tr>
+}

@@ -1,0 +1,32 @@
+<tr>
+    <td>
+        <table role="presentation" class="responsive" @@if(typeof context.col1Width === 'number'){width="@@col1Width" }align="left">
+            <tr>
+                <td class="row">
+                    @@col1Row1Content
+                </td>
+            </tr>
+            @@if(typeof context.col1Row2Content === 'string'){
+                <tr>
+                    <td class="row">
+                        @@col1Row2Content
+                    </td>
+                </tr>
+            }
+        </table>
+        <table role="presentation" class="responsive" @@if(typeof context.col2Width === 'number'){width="@@col2Width" }align="right">
+            <tr>
+                <td class="row">
+                    @@col2Row1Content
+                </td>
+            </tr>
+            @@if(typeof context.col2Row2Content === 'string'){
+                <tr>
+                    <td class="row">
+                        @@col2Row2Content
+                    </td>
+                </tr>
+            }
+        </table>
+    </td>
+</tr>
